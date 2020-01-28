@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color: #595959;
     color: white;
     height: 100vh;
     line-height: 1.6;
@@ -43,7 +43,7 @@ ul{
     padding: 1rem;
 }
 
-ul li a {
+a {
     text-decoration: none;
     color: white;
 }
@@ -56,7 +56,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
-width: 100%;
+/* width: 100%; */
 height: 100vh;
 }
 
@@ -67,13 +67,14 @@ height: 100vh;
 }
 
 #intro{
-    background: url(./img/geometric-1732847_1920.jpg);
-    background-color: black;
+    background: url(./img/programming-1873854.png);
+    /* background-color: black; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     justify-content: center;
+    -webkit-text-stroke: 1px black;
 }
 
 #intro h1{
@@ -89,30 +90,43 @@ height: 100vh;
     padding: 1rem;
 }
 #about{
-    height: 70vh;
-    display: flex;
-    flex-direction: row;
+    /* height: 100vm; */
+    /* width: 100%; */
+    display: grid;
+    align-items: center;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-areas: 
+    'headshot intro';
+    /* grid-template-columns: repeat(auto-fit, minmax(325px, 1fr)); */
+    background-color: black;
+    padding: 4rem;
 }
 
-#about p{
-    padding: 5%
+.desc{
+    width: 80%;
+    /* background-color: purple; */
+    margin: auto;
+    grid-area: intro;
+
 }
 
-#headshot{
-height: 15em;
+#about img{
+/* height: 10%; */
 border-radius: 50%;
-margin: 5em;
+margin: auto;
+grid-area: headshot;
+/* padding: 5rem; */
 }
+
+
 
 #projects{
     padding: 10%;
     width: 80%;
     align-items: center;
     justify-content: center;
-    /* background: url(./img/programming-1873854.png); */
+    background: url("./img/work-731198_1920.jpg");
     background-size: cover;
-/* text-align: center; */
-
 }
 #projects p{
 
@@ -124,6 +138,9 @@ margin: 5em;
     height: 100%;
 }
 
+.project{
+    display: grid;
+}
 
 .projectDesc{
     margin: 1.25%;
@@ -138,7 +155,7 @@ margin: 5em;
     margin: 1em;
     background-color: gray;
     width: 100%;
-    min-height: 10%;
+    height: 25%;
     box-shadow: 1px 1px #595959;
 }
 
@@ -160,6 +177,7 @@ margin: 5em;
 #skills{
     width: 100%;
     height: 60vh;
+    
 }
 .content{
     display: flex;
@@ -180,20 +198,22 @@ margin: 5em;
     border-bottom: 1px solid white;
     /* font-size: 2.5em; */
 }
-/* #contact{
-    background: url("/main/img/code-1839406.jpg");
-} */
+
 
 .skillsCard{
     /* border: 1px solid white; */
     margin: 2%;
     width: 25%;
-    /* background-color: aqua; */
+    background-color: aqua;
     justify-content: center;
 }
 
+#contact{
+    background-color:black;
+    width: 100%;
+}
 #FormDiv{
-    width: 40%;
+    width: 60%;
     min-height: 35%;
 }
 #form{
@@ -239,6 +259,16 @@ input:focus::placeholder, textarea:focus::placeholder {
     padding: 0;
     border-bottom: solid 1px white;
 }
+
+@media (max-width: 500px) {
+    #about {
+    grid-template-areas:
+        'headshot'
+        'intro';
+    padding: 1rem;
+    /* padding-top: 2rem; */
+    }
+  }
 
 
 
