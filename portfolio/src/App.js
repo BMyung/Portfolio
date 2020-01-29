@@ -4,7 +4,8 @@ import Intro from './components/home/intro';
 import About from './components/about/about';
 import Projects from './components/projects/projects';
 import Skills from './components/skills/skills';
-import Contact from './components/contact/contact'
+import Contact from './components/contact/contact';
+import ProjectsResponsive from './components/projects/projects_responsive';
 
 class App extends Component {
   render(){
@@ -13,8 +14,9 @@ class App extends Component {
       <Header ></Header>
       <Intro></Intro>
       <About></About>
-      <Projects></Projects>
+      {/* <Projects></Projects> */}
       {/* <Skills></Skills> */}
+      <ProjectsResponsive></ProjectsResponsive>
       <Contact></Contact>
       </div>
     )

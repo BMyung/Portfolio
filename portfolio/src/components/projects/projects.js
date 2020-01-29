@@ -6,8 +6,7 @@ render (){
 return (
 <div id="projects" className="page">
   <h1>Projects</h1>
-  
-  {/* <div className="project card">
+  <div className="project card">
     <img src={pp1} alt="thumbnail-of-nonprofit-search-homepage"></img>
     <div className="projectDesc">
       <h3>Nonprofit Search</h3>
@@ -16,7 +15,7 @@ return (
         Utilized MySQL to allow users to create an account and save selected nonprofits to a "Favorites" list.
       </p>
       <h4>Tech Used</h4>
-      <ul>
+      <ul className="tech">
         <li>Python</li>
         <li>Django</li>
         <li>Bootstrap</li>
@@ -37,7 +36,7 @@ return (
       <p>Online application of Lost Cities 2-Player Card Game, built from scratch to provide real-time multiplayer functionality. 
       </p>
       <h4>Tech Used</h4>
-      <ul>
+      <ul className="tech">
         <li>JavaScript</li>
         <li>Angular</li>
         <li>CSS</li>
@@ -50,7 +49,7 @@ return (
     <div className="projectDesc"><h3>Check Split</h3>
       <p>Web Application to assist groups in splitting restaurant checks by calculating the necessary tax and tip of each person and  displaying a running total bill for the group</p>
       <h4>Tech Used</h4>
-      <ul>
+      <ul className="tech">
         <li>Java</li>
         <li>Spring Tools Suit</li>
         <li>AJAX</li>
@@ -58,13 +57,13 @@ return (
         <li>MySQL</li>
       </ul>
     </div>
-  </div> */}
+  </div>
   <div className="project card">
     <img className="projectPhoto" src="img/placeholder.jpg" />
     <div className="projectDesc"><h3>Test Project</h3>
       <p>Web Application to assist groups in splitting restaurant checks by calculating the necessary tax and tip of each person and  displaying a running total bill for the group</p>
       <h4>Tech Used</h4>
-      <ul>
+      <ul className="tech">
         <li>Java</li>
         <li>Spring Tools Suit</li>
         <li>AJAX</li>
