@@ -5,6 +5,7 @@ export default class ProjectsResponsive extends Component {
     render (){
     return (
 <div id="projects" className="projects page">
+<h1>Projects</h1>
   <ul>
     <li>
       <div className="projectHeading">
@@ -39,10 +40,10 @@ export default class ProjectsResponsive extends Component {
         <li>CSS</li>
         <li>Socket.io</li>
       </ul>
-      <div className="projectLinks">
+      {/* <div className="projectLinks">
         <a href="https://youtu.be/60IOSp7_T_M">View Demo on Youtube <i className="fab fa-youtube" /></a> |  
         <a href="https://github.com/BMyung/Nonprofit-Search/tree/one-API"> View GitHub Repository <i className="fab fa-github" /></a>
-      </div>
+      </div> */}
     </li>
     <li>
       <div className="projectHeading">
@@ -58,10 +59,10 @@ export default class ProjectsResponsive extends Component {
         <li>jQuery</li>
         <li>MySQL</li>
       </ul>
-      <div className="projectLinks">
+      {/* <div className="projectLinks">
         <a href="https://youtu.be/60IOSp7_T_M">View Demo on Youtube <i className="fab fa-youtube" /></a> |  
         <a href="https://github.com/BMyung/Nonprofit-Search/tree/one-API"> View GitHub Repository <i className="fab fa-github" /></a>
-      </div>
+      </div> */}
     </li>
   </ul>
 </div>
