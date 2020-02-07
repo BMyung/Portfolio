@@ -11,7 +11,7 @@ ul{
 body {
     font-family: Arial, Helvetica, sans-serif;
     /* background-color: #2e2e2e; */
-    background-color: black;
+    background-color:black;
     color: white;
     
     line-height: 1.6;
@@ -24,7 +24,7 @@ body {
 }
 
 #header{
-    background-color: rgba(0,0,0, 0.15);
+    background-color: rgba(0,0,0, 0.55);
     position: fixed; /*always on top*/
     top: 0; 
     width: 100%;
@@ -44,7 +44,7 @@ body {
 
 #header ul li  {
     margin: 0 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 a {
@@ -52,6 +52,10 @@ a {
     color: white;
 }
 
+h1{
+    color:aqua;
+    text-shadow: 1px 1px gray;
+}
 
 .page{
 display: flex;
@@ -70,18 +74,19 @@ min-height: 100vh;
 }
 
 #intro{
-    background: url(./img/programming-1873854.png);
+    background: url("./img/programming-1873854.png");
     /* background-color: black; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     justify-content: center;
-    -webkit-text-stroke: 1px black;
+    /* -webkit-text-stroke: 1px black; */
 }
 
 #intro h1{
     font-size: 5em;
+    color: white;
 }
 
 #intro h2{
@@ -97,10 +102,10 @@ min-height: 100vh;
 
 }
 
-#intro .fa-linkedin {
+/* #intro .fa-linkedin {
     background-color: rgb(19, 19, 19, .8);
     border-radius: 50%;
-}
+} */
 
 
 #intro li{
@@ -108,17 +113,14 @@ min-height: 100vh;
     padding: 1rem;
 }
 #about{
-    /* height: 100vh; */
-    /* width: 100%; */
     display: grid;
     align-items: center;
-    /* grid-template-columns: auto auto auto; */
     grid-template-areas: 
     'headshot intro';
-    /* grid-template-columns: repeat(auto-fit, minmax(325px, 1fr)); */
-    /* background-color: black; */
     padding: 4rem;
 }
+
+
 
 .desc{
     width: 80%;
@@ -129,15 +131,18 @@ min-height: 100vh;
 }
 
 #about img{
-/* height: 10%; */
 border-radius: 50%;
 margin: auto;
 grid-area: headshot;
-/* padding: 5rem; */
 }
 
-.projects {
+#projects{
     padding: 2rem;
+    background: url("./img/work-731198_1920.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .projects > h1{
@@ -191,15 +196,7 @@ grid-area: headshot;
     margin: .5rem;
 }
 
-#projects{
-    padding: 2rem;
-    background: url("./img/work-731198_1920.jpg");
-    background-size: cover;
-}
 
-/* .project{
-    display: grid;
-} */
 
 .projectDesc{
     margin: 1.25%;
@@ -220,20 +217,28 @@ grid-area: headshot;
 
     }
 
-#skills{
-    background-color: aqua;
+.skills{
     min-height: 65vh;
     padding: 2rem;
+
 }
 
 .skills > h1{
     margin-bottom: 2rem;
 }
 
+.skills > ul > li > h3{
+    color: hotpink;
+    font-size: 2rem;
+}
+.skills > ul > li {
+    font-size: 1.5rem;
+}
+
 .skills > ul {
     display: grid;
-    grid-template-columns: repeat(4, 180px);
-    grid-gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 6rem;
     align-items: baseline;
 }
 
@@ -301,11 +306,24 @@ input:focus::placeholder, textarea:focus::placeholder {
     /* padding-top: 2rem; */
     }
 
+
+    #header > ul > li{
+        padding: 0rem;
+    }
+
     .skills > ul {
         display: grid;
         grid-template-columns: repeat(2, 160px);
-        grid-gap: 1.5rem;
+        grid-gap: 2rem;
         align-items: baseline;
+    }
+
+    .skills > ul > li > h3{
+        font-size: 1.5rem;
+    }
+
+    .skills > ul > li {
+        font-size: 1rem;
     }
 
     #skills{

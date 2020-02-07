@@ -8,7 +8,8 @@ export default class Form extends Component {
             name: "",
             email: "",
             message: "",
-            error: ""
+            error: "",
+            submit: false,
         };
         this.handleChange = e => {
             this.setState({ [e.target.name]: e.target.value })
@@ -21,7 +22,8 @@ export default class Form extends Component {
     render() {
         return(
             <div id="FormDiv">
-            <form id="form" method="POST" onSubmit={this.handleSubmit}>
+            {!this.state.submit && (
+                <form id="form" method="POST" onSubmit={this.handleSubmit}>
                 <input className="formField" id="name" name="name" type="text"
                     placeholder="Name"
                     onChange = {e => this.handleChange(e)}
@@ -35,6 +37,12 @@ export default class Form extends Component {
                  onChange = {e => this.handleChange(e)}/>
                 <input typeid="submit" className="formField" type="submit" value="Send"></input>
             </form>
+            )}
+            {this.state.submit && (
+                <div>
+                    <h2>Thank you for submitting your message! I will get back to you as soon as I can. A copy of your message has been sent to your email</h2>
+                </div>
+            )}
             <h3>{this.state.error}</h3>
             </div>
 
@@ -54,6 +62,7 @@ export default class Form extends Component {
             this.sendEmail(this.tempId, templateParams);
             e.preventDefault();
             this.setState({error:""})
+            this.setState({submit:true})
         }
     }
 
