@@ -3,7 +3,7 @@ import React, {Component } from 'react';
 export default class Intro extends Component {
     render(){
         return (
-            <div className="page" id="intro">
+            <div className="page intro" id="intro">
   <h2>Meet...</h2>
   <h1>Bryan Myung</h1>
   <ul className="links">

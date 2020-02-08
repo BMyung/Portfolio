@@ -10,7 +10,6 @@ ul{
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /* background-color: #2e2e2e; */
     background-color:black;
     color: white;
     
@@ -23,28 +22,34 @@ body {
     text-align: center;
 }
 
+
 #header{
-    background-color: rgba(0,0,0, 0.55);
     position: fixed; /*always on top*/
     top: 0; 
     width: 100%;
-    z-index: 1; /*stacking order of elements*/
+    z-index: 1; /* stacking order of elements */
     display: flex; /*flex-box*/
-    height: 45px;
-
 }
 
-#header ul{
+.header{
+    background-color: rgba(0,0,0, 0.55);
+    height: 45px;
+}
+
+.header ul{
     display: flex;
     align-items: center;
-    /* list-style: none; */
     width: 100%;
     justify-content: center;
 }
 
-#header ul li  {
+.header ul li  {
     margin: 0 1rem;
     padding: 2rem;
+}
+
+.mobileNav{
+    display: none;
 }
 
 a {
@@ -73,7 +78,7 @@ min-height: 100vh;
     font-size: 1.5rem;
 }
 
-#intro{
+.intro{
     background: url("./img/programming-1873854.png");
     /* background-color: black; */
     background-position: center;
@@ -84,16 +89,16 @@ min-height: 100vh;
     /* -webkit-text-stroke: 1px black; */
 }
 
-#intro h1{
+.intro h1{
     font-size: 5em;
     color: white;
 }
 
-#intro h2{
+.intro h2{
     font-size: 2em;
 }
 
-#intro ul{
+.intro ul{
     display: flex;
     align-items: center;
     /* list-style: none; */
@@ -108,11 +113,12 @@ min-height: 100vh;
 } */
 
 
-#intro li{
+.intro li{
     margin: 0 1rem;
     padding: 1rem;
 }
-#about{
+
+.about{
     display: grid;
     align-items: center;
     grid-template-areas: 
@@ -130,13 +136,13 @@ min-height: 100vh;
 
 }
 
-#about img{
+.about img{
 border-radius: 50%;
 margin: auto;
 grid-area: headshot;
 }
 
-#projects{
+.projects{
     padding: 2rem;
     background: url("./img/work-731198_1920.jpg");
     background-attachment: fixed;
@@ -201,7 +207,7 @@ grid-area: headshot;
 .projectDesc{
     margin: 1.25%;
 }
-#projects h3{
+.projects h3{
     font-size: 1.25em;
 }
 
@@ -247,7 +253,6 @@ grid-area: headshot;
     border-bottom: 1px solid white;
     /* font-size: 2.5em; */
 }
-
 
 
 
@@ -297,7 +302,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     border-bottom: solid 1px white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     #about {
     grid-template-areas:
         'headshot'
@@ -306,10 +311,38 @@ input:focus::placeholder, textarea:focus::placeholder {
     /* padding-top: 2rem; */
     }
 
-
-    #header > ul > li{
-        padding: 0rem;
+    .responsive{
+        align-items: center;
+    
     }
+
+
+    .header > ul > li {
+        display: none;
+    }
+
+    .responsive > ul{
+        background-color: rgba(0,0,0, 0.90);
+        display: block;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top:0rem;
+        padding: .75rem 0;
+    }
+    
+    .header > ul > li{
+        padding: .5rem; 
+    }
+
+
+    .mobileNav {
+        display: block;
+        padding-left: 1rem;
+    }
+
+
+
 
     .skills > ul {
         display: grid;
@@ -330,6 +363,7 @@ input:focus::placeholder, textarea:focus::placeholder {
         min-height: 100vh;
         padding: 0;
     }
+
     
   }
 
