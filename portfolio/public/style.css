@@ -311,17 +311,17 @@ input:focus::placeholder, textarea:focus::placeholder {
     /* padding-top: 2rem; */
     }
 
-    .responsive{
+    /* .responsive{
         align-items: center;
-    
-    }
+    } */
 
 
     .header > ul > li {
-        display: none;
+        margin: 0;
+        padding: .5rem;
     }
 
-    .responsive > ul{
+    /* .responsive > ul{
         background-color: rgba(0,0,0, 0.90);
         display: block;
         align-items: center;
@@ -329,17 +329,17 @@ input:focus::placeholder, textarea:focus::placeholder {
         position: fixed;
         top:0rem;
         padding: .75rem 0;
-    }
+    } */
     
-    .header > ul > li{
+    /* .header > ul > li{
         padding: .5rem; 
-    }
+    } */
 
 
-    .mobileNav {
+    /* .mobileNav {
         display: block;
         padding-left: 1rem;
-    }
+    } */
 
 
 

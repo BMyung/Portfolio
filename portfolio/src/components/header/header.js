@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 
 export default class Header extends Component { 
-  constructor (props){
-    super (props);
-    this.state = {
-      responseClass: "header",
-    };
-    this.myFunction = this.myFunction.bind(this);
-  }
+  // constructor (props){
+  //   super (props);
+  //   this.state = {
+  //     responseClass: "header",
+  //   };
+  //   this.myFunction = this.myFunction.bind(this);
+  // }
     render() {
       return (
   
-        <nav id="header" className={this.state.responseClass}>
+        <nav id="header" className="header">
           <ul>
-          <a className="mobileNav" onClick={this.myFunction}>
+          {/* <a href="#" className="mobileNav" onClick={this.myFunction}>
         <i className="fas fa-bars"></i>
-        </a>
+        </a> */}
             <li><a href="#intro">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -26,14 +26,14 @@ export default class Header extends Component {
       );
     }
 
-    myFunction(e) {
-      if (this.state.responseClass==="header"){
-        this.setState({responseClass:"responsive"})
-      }
-      else{
-        this.setState({responseClass:"header"})
-      }
+    // myFunction(e) {
+    //   if (this.state.responseClass==="header"){
+    //     this.setState({responseClass:"responsive"})
+    //   }
+    //   else{
+    //     this.setState({responseClass:"header"})
+    //   }
 
 
-    }
+    // }
   };
