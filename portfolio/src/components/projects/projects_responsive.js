@@ -1,5 +1,6 @@
 import React, {Component } from 'react';
 import pp1 from './pp1.jpg';
+import checksplit from './checksplit.jpg';
 
 export default class ProjectsResponsive extends Component {
     render (){
@@ -47,14 +48,14 @@ export default class ProjectsResponsive extends Component {
     </li> */}
     <li>
       <div className="projectHeading">
-        <img src={pp1} alt="nonprofit project thumbnail" />
+        <img src={checksplit} alt="restaurant menu" />
         <h3>Check Split</h3>
       </div>
       <p>Web application which assists in splitting restaurant checks by calculating each person's the necessary tax and tip and displaying a running total for the group</p>
       <h4>Tech Used</h4>
       <ul className="tech">
         <li>Java</li>
-        <li>Spring Tools Suit</li>
+        <li>Spring Tools Suite</li>
         <li>AJAX</li>
         <li>jQuery</li>
         <li>MySQL</li>
