@@ -54,7 +54,7 @@ export default class Form extends Component {
             email: this.state.email,
             message: this.state.message
         };
-        if (templateParams.email == "" || templateParams.name == "" || templateParams.message == ""){
+        if (templateParams.email === "" || templateParams.name === "" || templateParams.message === ""){
             this.setState({error: "Please complete all fields"})
             e.preventDefault();
         }
