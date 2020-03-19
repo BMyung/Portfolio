@@ -1,6 +1,7 @@
 import React, {Component } from 'react';
 import pp1 from './pp1.jpg';
 import checksplit from './checksplit.jpg';
+import johng from './linklist.JPG'
 
 export default class ProjectsResponsive extends Component {
     render (){
@@ -28,24 +29,24 @@ export default class ProjectsResponsive extends Component {
         <a href="https://github.com/BMyung/Nonprofit-Search/tree/one-API"> View GitHub Repository <i className="fab fa-github" /></a>
       </div>
     </li>
-    {/* <li>
+    <li>
       <div className="projectHeading">
-        <img src={pp1} alt="nonprofit project thumbnail" />
-        <h3>Lost Cities Online</h3>
+        <img src={johng} alt="nonprofit project thumbnail" />
+        <h3>JohnG LinkShare Page</h3>
       </div>
-      <p>Online application of 2-Player card game Lost Cities providing real-time multiplayer functionality.</p>
+      <p>Link-sharing page for speaker and magician John Guastaferro that showcases his different professions and available services.</p>
       <h4>Tech Used</h4>
       <ul className="tech">
         <li>JavaScript</li>
-        <li>Angular</li>
+        <li>React</li>
         <li>CSS</li>
-        <li>Socket.io</li>
+        <li></li>
       </ul>
       <div className="projectLinks">
-        <a href="https://youtu.be/60IOSp7_T_M">View Demo on Youtube <i className="fab fa-youtube" /></a> |  
-        <a href="https://github.com/BMyung/Nonprofit-Search/tree/one-API"> View GitHub Repository <i className="fab fa-github" /></a>
+        <a href="https://linkshare.bryanmyung.io">View page</a> |  
+        <a href="https://github.com/BMyung/linkshare"> View GitHub Repository <i className="fab fa-github" /></a>
       </div>
-    </li> */}
+    </li>
     <li>
       <div className="projectHeading">
         <img src={checksplit} alt="restaurant menu" />
