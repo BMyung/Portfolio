@@ -34,7 +34,7 @@ export default class ProjectsResponsive extends Component {
         <img src={johng} alt="nonprofit project thumbnail" />
         <h3>JohnG LinkShare Page</h3>
       </div>
-      <p>Link-sharing page created using React for speaker and magician John Guastaferro that showcase his different professions and available services. Deployed to github pages.</p>
+      <p>Fully responsive link-sharing page created using React for speaker and magician John Guastaferro. Page showcases his different professions and available services and deployed to github pages.</p>
       <h4>Tech Used</h4>
       <ul className="tech">
         <li>JavaScript</li>
