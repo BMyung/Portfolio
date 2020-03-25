@@ -34,16 +34,15 @@ export default class ProjectsResponsive extends Component {
         <img src={johng} alt="nonprofit project thumbnail" />
         <h3>JohnG LinkShare Page</h3>
       </div>
-      <p>Link-sharing page for speaker and magician John Guastaferro that showcases his different professions and available services.</p>
+      <p>Link-sharing page created using React for speaker and magician John Guastaferro that showcase his different professions and available services. Deployed to github pages.</p>
       <h4>Tech Used</h4>
       <ul className="tech">
         <li>JavaScript</li>
         <li>React</li>
-        <li>CSS</li>
-        <li></li>
+        <li>HTML/CSS</li>
       </ul>
       <div className="projectLinks">
-        <a href="https://linkshare.bryanmyung.io">View page</a> |  
+        <a href="https://bmyung.github.io/linkshare/">View page</a> |  
         <a href="https://github.com/BMyung/linkshare"> View GitHub Repository <i className="fab fa-github" /></a>
       </div>
     </li>
